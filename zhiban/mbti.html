@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-CZMNYE702Y"></script>
+	<script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-CZMNYE702Y'); </script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Free Bootstrap Themes by 365Bootstrap dot com - Free Responsive Html5 Templates">
+
+    <title>mbti测试</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/animated-logo.min.css"><!-- Logo -->
+	<link rel="stylesheet" href="css/our-team.css"> <!-- Resource style -->
+	
+	<!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	
+	<!-- Js -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+	
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<!-- /////////////////////////////////////////Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- 品牌和切换组合，实现更好的移动显示 -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="index.html">智伴科技</a>
+            </div>
+
+            <!-- 收集导航链接、表格和其他内容以进行切换 -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+					<li>
+                        <a class="page-scroll" href="zhiban.html">回到首页</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#page-top">MBTI测试</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+	<!-- Navigation -->
+
+	<!-- /////////////////////////////////////////Header -->
+	<header id="page-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="o-container">
+						<div class="c-slack">
+						  <span class="c-slack__dot c-slack__dot--a"></span>
+						  <span class="c-slack__dot c-slack__dot--b"></span>
+						  <span class="c-slack__dot c-slack__dot--c"></span>
+						  <span class="c-slack__dot c-slack__dot--d"></span>
+						</div>
+					</div>
+                    <container>
+					<div class="intro-text">
+                        <div id="question1" class="question">
+                            <p class="intro-heading">请问您更倾向于</p>
+                            <br>
+                            <button onclick="handleAnswer('a', 'question1')" class="btn btn-3 btn-sm" style="margin: 5px;">A.与很多人交流互动</button>
+                            <button onclick="handleAnswer('b', 'question1')" class="btn btn-3 btn-sm" style="margin: 5px;">B.独立思考与工作</button>
+                        </div>
+                    
+                        <div id="question1.1" class="question hidden">
+                            <p class="intro-heading">在社交场合中，您更喜欢</p>
+                            <br>
+                            <button onclick="handleAnswer('c', 'question1.1')" class="btn btn-3 btn-sm" style="margin: 5px;">A.主动参与和引导谈话</button>
+                            <button onclick="handleAnswer('d', 'question1.1')" class="btn btn-3 btn-sm" style="margin: 5px;">B.与大家分享自己的观点，但更多地倾听他人</button>
+                            <br>
+                            <button onclick="goBack('question1')" class="btn btn-2 btn-sm" style="margin: 5px;">上一题</button>
+                        </div>
+                    
+                        <div id="question1.2" class="question hidden">
+                            <p class="intro-heading">在处理问题时，您更倾向于</p>
+                            <br>
+                            <button onclick="handleAnswer('e', 'question1.2')" class="btn btn-3 btn-sm" style="margin: 5px;">深入分析和思考各种可能性</button>
+                            <button onclick="handleAnswer('f', 'question1.2')" class="btn btn-3 btn-sm" style="margin: 5px;">依据自己的经验和感觉作出决策</button>
+                            <br>
+                            <button onclick="goBack('question1')" class="btn btn-2 btn-sm" style="margin: 5px;">上一题</button>
+                        </div>
+                    
+                        <div id="question1.1.1" class="question hidden">
+                            <p class="intro-heading">当需要做出重要决定时，你更倾向于</p>
+                            <br>
+                            <button onclick="handleAnswer('g', 'question1.1.1')" class="btn btn-3 btn-sm" style="margin: 5px;">A.依据逻辑和客观事实作出决策</button>
+                            <button onclick="handleAnswer('h', 'question1.1.1')" class="btn btn-3 btn-sm" style="margin: 5px;">B.考虑他人的感受和价值观</button>
+                            <br>
+                            <button onclick="goBack('question1.1')" class="btn btn-2 btn-sm" style="margin: 5px;">上一题</button>
+                        </div>
+                    
+                        <div id="question1.1.2" class="question hidden">
+                            <p class="intro-heading">您做决定时更依赖</p>
+                            <br>
+                            <button onclick="handleAnswer('i', 'question1.1.2')" class="btn btn-3 btn-sm" style="margin: 5px;">A.逻辑和分析</button>
+                            <button onclick="handleAnswer('j', 'question1.1.2')" class="btn btn-3 btn-sm" style="margin: 5px;">B.感情和价值观</button>
+                            <br>
+                            <button onclick="goBack('question1.1')" class="btn btn-2 btn-sm" style="margin: 5px;">上一题</button>
+                        </div>
+                    
+                        <div id="question1.2.1" class="question hidden">
+                            <p class="intro-heading">在面对问题时，您更倾向于</p>
+                            <br>
+                            <button onclick="handleAnswer('k', 'question1.2.1')" class="btn btn-3 btn-sm" style="margin: 5px;">A.着重考虑逻辑和客观的因素</button>
+                            <button onclick="handleAnswer('l', 'question1.2.1')" class="btn btn-3 btn-sm" style="margin: 5px;">B.关注个人的价值观和情感</button>
+                            <br>
+                            <button onclick="goBack('question1.2')" class="btn btn-2 btn-sm" style="margin: 5px;">上一题</button>
+                        </div>
+                    
+                        <div id="question1.2.2" class="question hidden">
+                            <p class="intro-heading">当需要做出决策时，您更倾向于</p>
+                            <br>
+                            <button onclick="handleAnswer('m', 'question1.2.2')" class="btn btn-3 btn-sm" style="margin: 5px;">A.分析和评估各种选项的实际影响</button>
+                            <button onclick="handleAnswer('n', 'question1.2.2')" class="btn btn-3 btn-sm" style="margin: 5px;">B.优先考虑他人的感受和情感反应</button>
+                            <br>
+                            <button onclick="goBack('question1.2')" class="btn btn-2 btn-sm" style="margin: 5px;">上一题</button>
+                        </div>
+                    
+                        <div id="question1.1.1.1" class="question hidden">
+                            <p class="intro-heading">在生活中，您更倾向于</p>
+                            <br>
+                            <button onclick="showContent('1','questions1.1.1.1')" class="btn btn-3 btn-sm" style="margin: 5px;">A.计划和有条理地组织自己的时间和任务</button>
+                            <button onclick="showContent('2','questions1.1.1.1')" class="btn btn-3 btn-sm" style="margin: 5px;">B.灵活地适应和享受当下的生活</button>
+                            <br>
+                            <button onclick="goBack('question1.1.1')" class="btn btn-2 btn-sm" style="margin: 5px;">上一题</button>
+                        </div>
+                    
+                        <div id="question1.1.1.2" class="question hidden">
+                            <p class="intro-heading">在生活中，您更倾向于</p>
+                            <br>
+                            <button onclick="showContent('3','questions1.1.1.2')" class="btn btn-3 btn-sm" style="margin: 5px;">A.计划和有条理地组织自己的时间和任务</button>
+                            <button onclick="showContent('4','questions1.1.1.2')" class="btn btn-3 btn-sm" style="margin: 5px;">B.灵活地适应和享受当下的生活</button>
+                            <br>
+                            <button onclick="goBack('question1.1.1')" class="btn btn-2 btn-sm" style="margin: 5px;">上一题</button>
+                        </div>
+                    
+                        <div id="question1.1.2.1" class="question hidden">
+                            <p class="intro-heading">您更喜欢的生活方式是</p>
+                            <br>
+                            <button onclick="showContent('5','questions1.1.2.1')" class="btn btn-3 btn-sm" style="margin: 5px;">A.计划和有条理</button>
+                            <button onclick="showContent('6','questions1.1.2.1')" class="btn btn-3 btn-sm" style="margin: 5px;">B.随机和灵活</button>
+                            <br>
+                            <button onclick="goBack('question1.1.2')" class="btn btn-2 btn-sm" style="margin: 5px;">上一题</button>
+                        </div>
+                        
+                        <div id="question1.1.2.2" class="question hidden">
+                            <p class="intro-heading">您更喜欢的生活方式是</p>
+                            <br>
+                            <button onclick="showContent('7','questions1.1.2.2')" class="btn btn-3 btn-sm" style="margin: 5px;">A.计划和有条理</button>
+                            <button onclick="showContent('8','questions1.1.2.2')" class="btn btn-3 btn-sm" style="margin: 5px;">B.随机和灵活</button>
+                            <br>
+                            <button onclick="goBack('question1.1.2')" class="btn btn-2 btn-sm" style="margin: 5px;">上一题</button>
+                        </div>	
+                    
+                        <div id="question1.2.1.1" class="question hidden">
+                            <p class="intro-heading">在生活中，您更倾向于</p>
+                            <br>
+                            <button onclick="showContent('9','questions1.2.1.1')" class="btn btn-3 btn-sm" style="margin: 5px;">A.按照自己的计划和时间表行事</button>
+                            <button onclick="showContent('10','questions1.2.1.1')" class="btn btn-3 btn-sm" style="margin: 5px;">B.根据当下的情况和灵感决定行动</button>
+                            <br>
+                            <button onclick="goBack('question1.2.1')" class="btn btn-2 btn-sm" style="margin: 5px;">上一题</button>
+                        </div>
+                        
+                        <div id="question1.2.1.2" class="question hidden">
+                            <p class="intro-heading">在生活中，您更倾向于</p>
+                            <br>
+                            <button onclick="showContent('11','questions1.2.1.2')" class="btn btn-3 btn-sm" style="margin: 5px;">A.按照自己的计划和时间表行事</button>
+                            <button onclick="showContent('12','questions1.2.1.2')" class="btn btn-3 btn-sm" style="margin: 5px;">B.根据当下的情况和灵感决定行动</button>
+                            <br>
+                            <button onclick="goBack('question1.2.1')" class="btn btn-2 btn-sm" style="margin: 5px;">上一题</button>
+                        </div>
+                        
+                        <div id="question1.2.2.1" class="question hidden">
+                            <p class="intro-heading">在生活中，您更倾向于</p>
+                            <br>
+                            <button onclick="showContent('13','questions1.2.2.1')" class="btn btn-3 btn-sm" style="margin: 5px;">A.依据预先制定的计划和目标生活</button>
+                            <button onclick="showContent('14','questions1.2.2.1')" class="btn btn-3 btn-sm" style="margin: 5px;">B.根据当前情况和心情随机调整自己的生活方式</button>
+                            <br>
+                            <button onclick="goBack('question1.2.2')" class="btn btn-2 btn-sm" style="margin: 5px;">上一题</button>
+                        </div>
+                        
+                        <div id="question1.2.2.2" class="question hidden">
+                            <p class="intro-heading">在生活中，您更倾向于</p>
+                            <br>
+                            <button onclick="showContent('15','questions1.2.2.2')" class="btn btn-3 btn-sm" style="margin: 5px;">A.依据预先制定的计划和目标生活</button>
+                            <button onclick="showContent('16','questions1.2.2.2')" class="btn btn-3 btn-sm" style="margin: 5px;">B.根据当前情况和心情随机调整自己的生活方式</button>
+                            <br>
+                            <button onclick="goBack('question1.2.2')" class="btn btn-2 btn-sm" style="margin: 5px;">上一题</button>
+                        </div>
+                    
+                    
+                    
+                        <div id="containerA" class="container1">
+                            <img src="images/ENTJ.jpg" alt="ENTJ">
+                            <br><br>
+                            <p class="intro-heading">ESTJ</p>
+                        </div>
+                    
+                        <div id="containerB" class="container1">
+                            <img src="images/ESTP.jpg" alt="ESTP">
+                            <br><br>
+                            <p class="intro-heading">ESTP</p>
+                        </div>
+                    
+                        <div id="containerC" class="container1">
+                            <img src="images/ESFJ.jpg" alt="ESFJ">
+                            <br><br>
+                            <p class="intro-heading">ESFJ</p>
+                        </div>
+                    
+                        <div id="containerD" class="container1">
+                            <img src="images/ESFP.jpg" alt="ESFP">
+                            <br><br>
+                            <p class="intro-heading">ESFP</p>
+                        </div>
+                    
+                        <div id="containerE" class="container1">
+                            <img src="images/ENTJ.jpg" alt="ENTJ">
+                            <br><br>
+                            <p class="intro-heading">ENTJ</p>
+                        </div>
+                    
+                        <div id="containerF" class="container1">
+                            <img src="images/ENTP.jpg" alt="ENTP">
+                            <br><br>
+                            <p class="intro-heading">ENTP</p>
+                        </div>
+                    
+                        <div id="containerG" class="container1">
+                            <img src="images/ENFJ.jpg" alt="ENFJ">
+                            <br><br>
+                            <p class="intro-heading">ENFJ</p>
+                        </div>
+                    
+                        <div id="containerH" class="container1">
+                            <img src="images/ENFP.jpg" alt="ENFP">
+                            <br><br>
+                            <p class="intro-heading">ENFP</p>
+                        </div>    
+                        
+                        <div id="containerI" class="container1">
+                            <img src="images/ISTJ.jpg" alt="ISTJ">
+                            <br><br>
+                            <p class="intro-heading">ISTJ</p>
+                        </div>
+                    
+                        <div id="containerJ" class="container1">
+                            <img src="images/ISTP.jpg" alt="ISTP">
+                            <br><br>
+                            <p class="intro-heading">ISTP</p>
+                        </div>    
+                        <div id="containerK" class="container1">
+                            <img src="images/ISFJ.jpg" alt="ISFJ">
+                            <br><br>
+                            <p class="intro-heading">ISFJ</p>
+                        </div>
+                    
+                        <div id="containerL" class="container1">
+                            <img src="images/ISFP.jpg" alt="ISFP">
+                            <br><br>
+                            <p >ISFP</p>
+                        </div>    
+                        
+                        <div id="containerM" class="container1">
+                            <img src="images/INTJ.jpg" alt="INTJ">
+                            <br><br>
+                            <p class="intro-heading">INTJ</p>
+                        </div>
+                    
+                        <div id="containerN" class="container1">
+                            <img src="images/INTP.jpg" alt="INTP">
+                            <br><br>
+                            <p class="intro-heading">INTP</p>
+                        </div>    
+                        
+                        <div id="containerO" class="container1">
+                            <img src="images/INFJ.jpg" alt="INFJ">
+                            <br><br>
+                            <p class="intro-heading">INFJ</p>
+                        </div>
+                    
+                        <div id="containerP" class="container1">
+                            <img src="images/INFP.jpg" alt="INFP">
+                            <br><br>
+                            <p class="intro-heading">INFP</p>
+                        </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    </div>
+                </container>
+                
+                  </div>  
+
+
+                  
+                  
+                <script>
+                    let previousQuestion = null;
+            
+                    function handleAnswer(answer, currentQuestionId) {
+                        previousQuestion = currentQuestionId;
+                        const questions = document.querySelectorAll('.question');
+                        questions.forEach(q => q.classList.add('hidden'));
+            
+                        if (answer === 'a') {
+                            document.getElementById('question1.1').classList.remove('hidden');
+                        } else if (answer === 'b') {
+                            document.getElementById('question1.2').classList.remove('hidden');
+                        } else if (answer === 'c') {
+                            document.getElementById('question1.1.1').classList.remove('hidden');
+                        } else if (answer === 'd') {
+                            document.getElementById('question1.1.2').classList.remove('hidden');
+                        } else if (answer === 'e') {
+                            document.getElementById('question1.2.1').classList.remove('hidden');
+                        } else if (answer === 'f') {
+                            document.getElementById('question1.2.2').classList.remove('hidden');
+                        } else if (answer === 'g') {
+                            document.getElementById('question1.1.1.1').classList.remove('hidden');
+                        } else if (answer === 'h') {
+                            document.getElementById('question1.1.1.2').classList.remove('hidden');
+                        } else if (answer === 'i') {
+                            document.getElementById('question1.1.2.1').classList.remove('hidden');
+                        } else if (answer === 'j') {
+                            document.getElementById('question1.1.2.2').classList.remove('hidden');
+                        } else if (answer === 'k'){
+                            document.getElementById('question1.2.1.1').classList.remove('hidden');
+                        } else if (answer === 'l') {
+                            document.getElementById('question1.2.1.2').classList.remove('hidden');
+                        } else if (answer === 'm') {
+                            document.getElementById('question1.2.2.1').classList.remove('hidden');
+                        } else if (answer === 'n') {
+                            document.getElementById('question1.2.2.2').classList.remove('hidden');
+                        }
+                        
+                    }
+            
+                    function showContent(option) {
+                        // 隐藏标题和按钮
+                       
+            
+            
+            
+                        // 显示选中的容器
+                        if (option === '1') {
+                            document.getElementById('containerA').style.display = 'block';
+                            document.getElementById('question1.1.1.1').style.display = 'none';
+                        }
+                        
+                        if (option === '2') {
+                            document.getElementById('containerB').style.display = 'block';
+                            document.getElementById('question1.1.1.1').style.display = 'none';
+                        } 
+                        
+                        if (option === '3') {
+                            document.getElementById('containerC').style.display = 'block';
+                            document.getElementById('question1.1.1.2').style.display = 'none';
+                        }
+            
+                        if (option === '4') {
+                            document.getElementById('containerD').style.display = 'block';
+                            document.getElementById('question1.1.1.2').style.display = 'none';
+                        }
+                        
+                        if (option === '5') {
+                            document.getElementById('containerE').style.display = 'block';
+                            document.getElementById('question1.1.2.1').style.display = 'none';
+                        }
+                        
+                        if (option === '6') {
+                            document.getElementById('containerF').style.display = 'block';
+                            document.getElementById('question1.1.2.1').style.display = 'none';
+                        } 
+                        
+                        if (option === '7') {
+                            document.getElementById('containerG').style.display = 'block';
+                            document.getElementById('question1.1.2.2').style.display = 'none';
+                        }
+            
+                        if (option === '8') {
+                            document.getElementById('containerH').style.display = 'block';
+                            document.getElementById('question1.1.2.2').style.display = 'none';
+                        }
+                        if (option === '9') {
+                            document.getElementById('containerI').style.display = 'block';
+                            document.getElementById('question1.2.1.1').style.display = 'none';
+                        }
+            
+                        if (option === '10') {
+                            document.getElementById('containerJ').style.display = 'block';
+                            document.getElementById('question1.2.1.1').style.display = 'none';
+                        }
+            
+                        if (option === '11') {
+                            document.getElementById('containerK').style.display = 'block';
+                            document.getElementById('question1.2.1.2').style.display = 'none';
+                        }
+            
+                        if (option === '12') {
+                            document.getElementById('containerL').style.display = 'block';
+                            document.getElementById('question1.2.1.2').style.display = 'none';
+                        }
+            
+                        if (option === '13') {
+                            document.getElementById('containerM').style.display = 'block';
+                            document.getElementById('question1.2.2.1').style.display = 'none';
+                        }
+            
+                        if (option === '14') {
+                            document.getElementById('containerN').style.display = 'block';
+                            document.getElementById('question1.2.2.1').style.display = 'none';
+                        }
+            
+                        if (option === '15') {
+                            document.getElementById('containerO').style.display = 'block';
+                            document.getElementById('question1.2.2.2').style.display = 'none';
+                        }
+            
+                        if (option === '16') {
+                            document.getElementById('containerP').style.display = 'block';
+                            document.getElementById('question1.2.2.2').style.display = 'none';
+                        }
+            
+            
+                        
+                    }
+            
+                    function goBack(previousQuestionId) {
+                        const questions = document.querySelectorAll('.question');
+                        questions.forEach(q => q.classList.add('hidden'));
+            
+                        document.getElementById(previousQuestionId).classList.remove('hidden');
+                    }
+                </script>
+				</div>
+			</div>
+		</div>
+    </header>
+	<!-- Header -->
+	<div class="copyrights">中国智伴科技有限公司提供</a></div>
+	<!-- /////////////////////////////////////////Content -->
+	<div id="page-content" class="index-page">
+		
+
+		
+
+	<!-- /////////////////////////////////////////Footer -->
+	<footer>
+
+		<div class="copyright">
+			<div class="container">
+				<div class="row">
+
+						<p>Copyright &copy; 2024.中国智伴科技有限公司</a></p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer -->
+
+	
+	<!-- jQuery -->
+	<script src="js/jquery-2.1.1.js"></script>
+	<script src="js/masonry.pkgd.min.js"></script>
+	<script src="js/jquery.flexslider-min.js"></script>
+	<script src="js/main.js"></script> <!-- Resource jQuery -->
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+
+	<!-- Custom Theme JavaScript -->
+	<script src="js/agency.js"></script>
+
+	<!-- Animated Top -->
+	<script src="js/jquery.easing.min.js"></script>
+	<script src="js/classie.js"></script>
+	<script src="js/cbpAnimatedHeader.js"></script>
+
+</body>
+</html>
